@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import Button from '../../components/common/Button'
 import Card from '../../components/common/Card'
-import { FiActivity, FiMail, FiLock } from 'react-icons/fi'
+import { FiMail, FiLock } from 'react-icons/fi'
 
 const roleCredentials = {
   super_admin: { email: 'admin@clinic.com', password: 'password' },
@@ -55,9 +55,7 @@ const Login = () => {
     <Card className="w-full max-w-md" hover={false}>
       <div className="text-center mb-8">
         <div className="flex justify-center mb-4">
-          <div className="w-16 h-16 bg-[#90e0ef] rounded-2xl flex items-center justify-center shadow-md border border-blue-200">
-            <FiActivity className="text-[#1d627d]" size={36} />
-          </div>
+          <img src="/logo.jpeg" alt="HS Walters" className="h-20 w-auto object-contain" />
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mb-2">HS Walters EMR</h1>
         <p className="text-gray-600">Sign in to your medical platform</p>

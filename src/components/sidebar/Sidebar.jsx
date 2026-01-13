@@ -31,8 +31,10 @@ const Sidebar = () => {
         <div className="flex flex-col h-full relative z-50">
           {/* Logo/Header */}
           <div className="flex items-center justify-between p-4 sm:p-6 border-b border-[#00b4d8]/10 flex-shrink-0">
-            {(!isCollapsed || isMobileOpen) && (
-              <h2 className="text-[#1d627d] text-2xl font-black italic tracking-tighter uppercase">HS Walters</h2>
+            {(!isCollapsed || isMobileOpen) ? (
+              <img src="/logo.jpeg" alt="HS Walters" className="h-12 w-auto object-contain" />
+            ) : (
+              <img src="/logo.jpeg" alt="HS Walters" className="h-10 w-10 object-contain rounded" />
             )}
             <div className="flex items-center gap-2">
               {/* Mobile Close Button */}
